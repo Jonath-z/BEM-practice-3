@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./index.css" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#1D2130",
+              "primary-blue": "#6B7CFF",
+              "light-violet": "#E0E4FC",
+            },
+            fontFamily: {
+              roboto: "roboto",
+              "roboto-bold": "roboto-bold",
+            },
+            fontSize: {
+              paragraph: "16px",
+              "heading-2xl": "56px",
+              "heading-xl": "48px",
+              "heading-md": "24px",
+            },
+            borderRadius: {
+              xsm: "12px",
+              sm: "20px",
+            },
+            backgroundImage: {
+              "header-gradien":
+                "url('./assets/images/vectors/Blur Gradient.svg')",
+            },
+          },
+        },
+      };
+    </script>
+    <title>Home page</title>
+  </head>
+  <body>
+    <header
+      class="bg-[url('./assets/vectors/Blur-Gradient.svg')] px-20 bg-bottom"
+    >
+      <nav class="flex justify-between items-center py-2">
+        <div class="font-roboto-bold text-3xl">{finsweet</div>
+
+        <ul class="flex gap-6 items-center">
+          <li class="color-primary font-roboto text-paragraph">Home</li>
+          <li class="color-primary font-roboto text-paragraph">Produt</li>
+          <li class="color-primary font-roboto text-paragraph">Pricing</li>
+          <li class="color-primary font-roboto text-paragraph">About Us</li>
+          <li class="color-primary font-roboto text-paragraph">Blog</li>
+          <li class="color-primary font-roboto text-paragraph">Contact</li>
+          <li
+            class="color-primary font-roboto-bold font-extrabold text-white bg-primary hover:bg-light-violet hover:text-primary transition-all duration-500 ease-in-out cursor-pointer w-[144px] h-[56px] flex justify-center items-center rounded-xsm font-black text-paragraph"
+          >
+            Free trial
+          </li>
+        </ul>
+      </nav>
+      <div class="w-[1024px] mx-auto flex flex-col items-center mt-40">
+        <h1
+          class="text-heading-2xl font-extrabold font-roboto-bold text-center"
+        >
+          The Best Software to Grow <br />
+          your Sales and Services
+        </h1>
+        <p
+          class="font-roboto text-paragraph text-primary w-[768px] text-center mx-auto py-5"
+        >
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor <br />
+          invidunt ut labore et dolore magna aliquyam erat.
+        </p>
+        <div
+          class="flex gap-3 bg-white w-[576px] mx-auto h-[72px] p-[8px] rounded-sm mt-8"
+        >
+          <input
+            type="text"
+            placeholder="Enter Your Email"
+            class="outline-none w-full px-4 font-roboto"
+          />
+          <button
+            class="bg-primary w-[173px] h-[56px] rounded-xsm text-white hover:bg-light-violet hover:text-primary transition-all duration-500 ease-in-out font-roboto text-paragraph font-bold"
+          >
+            Get Free trial
+          </button>
+        </div>
+
+        <div class="my-10">
+          <img
+            src="./assets/images/Dashboard-image.png"
+            alt="dashbord image"
+            class="w-[1024px] h-[666.57px]"
+          />
+        </div>
+      </div>
+    </header>
+
+    <!-- feature -->
+    <section class="px-20 mt-20">
+      <p
+        class="text-heading-md font-roboto font-bold text-gradient text-center"
+      >
+        High-quality
+      </p>
+      <h1
+        class="text-heading-xl font-extrabold font-roboto-bold text-center py-8 leading-[57.6px]"
+      >
+        We have the Best Solution<br />
+        for your Business
+      </h1>
+
+      <div></div>
+    </section>
+  </body>
+</html>

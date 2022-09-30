@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+@font-face {
+  font-family: "roboto";
+  src: url("./assets/fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: "roboto-bold";
+  src: url("./assets/fonts/Roboto-Bold.ttf");
+}
+
+.text-gradient {
+  background: -webkit-linear-gradient(53.94deg, #373fff 15.02%, #3acaf8 82.83%);
+  background-clip: text;
+  fill: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

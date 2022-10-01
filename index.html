@@ -23,6 +23,7 @@
               paragraph: "16px",
               "heading-2xl": "56px",
               "heading-xl": "48px",
+              "heading-2md": "32px",
               "heading-md": "24px",
             },
             borderRadius: {
@@ -40,9 +41,7 @@
     <title>Home page</title>
   </head>
   <body>
-    <header
-      class="bg-[url('./assets/vectors/Blur-Gradient.svg')] px-20 bg-bottom"
-    >
+    <header class="px-20 bg-bottom">
       <nav class="flex justify-between items-center py-2">
         <div class="font-roboto-bold text-3xl">{finsweet</div>
 
@@ -54,13 +53,14 @@
           <li class="color-primary font-roboto text-paragraph">Blog</li>
           <li class="color-primary font-roboto text-paragraph">Contact</li>
           <li
-            class="color-primary font-roboto-bold font-extrabold text-white bg-primary hover:bg-light-violet hover:text-primary transition-all duration-500 ease-in-out cursor-pointer w-[144px] h-[56px] flex justify-center items-center rounded-xsm font-black text-paragraph"
+            class="color-primary font-roboto-bold font-extrabold text-white bg-primary hover:bg-light-violet hover:text-primary transition-all duration-500 ease-in-out cursor-pointer w-[144px] h-[56px] flex justify-center items-center rounded-xsm text-paragraph"
           >
             Free trial
           </li>
         </ul>
       </nav>
-      <div class="w-[1024px] mx-auto flex flex-col items-center mt-40">
+      <div class="w-[1024px] mx-auto flex flex-col items-center mt-40 relative">
+        <div class="-z-20 blur-gradient"></div>
         <h1
           class="text-heading-2xl font-extrabold font-roboto-bold text-center"
         >
@@ -101,11 +101,11 @@
 
     <!-- feature -->
     <section class="px-20 mt-20">
-      <p
+      <h4
         class="text-heading-md font-roboto font-bold text-gradient text-center"
       >
         High-quality
-      </p>
+      </h4>
       <h1
         class="text-heading-xl font-extrabold font-roboto-bold text-center py-8 leading-[57.6px]"
       >
@@ -113,7 +113,102 @@
         for your Business
       </h1>
 
-      <div></div>
+      <div
+        class="flex bg-light-violet/60 px-[66px] py-[64px] items-center rounded-[24px] my-10"
+      >
+        <div class="flex flex-col gap-8 w-full">
+          <img
+            src="./assets/vectors/feature-icon-1.svg"
+            alt="security mark"
+            class="w-12 h-12"
+          />
+          <h3
+            class="text-heading-2md font-roboto font-extrabold leading-[38.4px]"
+          >
+            High security to protect<br />
+            from piracy
+          </h3>
+          <p class="text-primary/80 font-roboto">
+            Lorem ipsum dolor sit amet, consetetur sadipscing <br />
+            elitr, sed diam nonumy.
+          </p>
+        </div>
+        <div class="flex flex-col gap-8 w-full">
+          <img
+            src="./assets/vectors/feature-icon-2.svg"
+            alt="security mark"
+            class="w-12 h-12"
+          />
+          <h3
+            class="text-heading-2md font-roboto font-extrabold leading-[38.4px]"
+          >
+            Premium quality<br />
+            performance
+          </h3>
+          <p class="text-primary/80 font-roboto">
+            Lorem ipsum dolor sit amet, consetetur sadipscing <br />
+            elitr, sed diam nonumy.
+          </p>
+        </div>
+        <div class="flex flex-col gap-8 w-full">
+          <img
+            src="./assets/vectors/feature-icon-3.svg"
+            alt="security mark"
+            class="w-12 h-12"
+          />
+          <h3
+            class="text-heading-2md font-roboto font-extrabold leading-[38.4px]"
+          >
+            Full time customer<br />
+            support - 24/7
+          </h3>
+          <p class="text-primary/80 font-roboto">
+            Lorem ipsum dolor sit amet, consetetur sadipscing <br />
+            elitr, sed diam nonumy.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="flex mx-20 gap-[87px] my-20 justify-center items-center">
+      <div class="w-full flex flex-col gap-8">
+        <h4 class="text-heading-md font-roboto font-bold text-gradient">
+          Why should you work with us?
+        </h4>
+        <h2 class="text-heading-xl font-roboto font-extrabold leading-[57.6px]">
+          To upscale your business<br />
+          to the next level
+        </h2>
+        <p class="font-roboto text-primary/90">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy<br />
+          eirmod tempor invidunt ut labore et dolore magna aliquyam erat,<br />
+          sed diam voluptua invidunt ut labore.
+        </p>
+      </div>
+      <div class="w-full flex flex-col gap-8">
+        <div class="flex items-center gap-5">
+          <img src="./assets/vectors/arrow-right-icon.svg" alt="arrow right" />
+          <p class="font-roboto text-primary text-[20px] font-semibold">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br />
+            sed do eiusmod.
+          </p>
+        </div>
+        <div class="flex items-center gap-5">
+          <img src="./assets/vectors/arrow-right-icon.svg" alt="arrow right" />
+          <p class="font-roboto text-primary text-[20px] font-semibold">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br />
+            sed do eiusmod.
+          </p>
+        </div>
+        <div class="flex items-center gap-5">
+          <img src="./assets/vectors/arrow-right-icon.svg" alt="arrow right" />
+          <p class="font-roboto text-primary text-[20px] font-semibold">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br />
+            sed do eiusmod.
+          </p>
+        </div>
+      </div>
     </section>
   </body>
 </html>

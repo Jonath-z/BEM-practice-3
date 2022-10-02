@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../index.css" />
-    <title>Contact</title>
+    <title>Blog</title>
   </head>
   <body>
-    <header class="px-20 pb-20">
+    <header class="px-20 bg-white">
       <nav class="flex justify-between items-center py-2">
         <div class="font-roboto-bold text-3xl">{finsweet</div>
 
@@ -35,77 +35,249 @@
         </ul>
       </nav>
     </header>
+    <img
+      src="../assets/vectors/Blur Gradient-about.svg"
+      class="absolute top-[30rem] left-0 -z-20 w-[800px] blur-3xlrounded-full"
+    />
+    <img
+      src="../assets/images/Blur Gradient-blog.png"
+      class="absolute top-[8rem] right-0 -z-20 w-[800px] blur-3xlrounded-full"
+    />
+    <section class="pt-20 flex flex-col gap-7 relative">
+      <h1 class="text-center">Read our latest blogs</h1>
+      <p class="text-center text-primary/70">
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+        eirmod tempor<br />
+        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+      </p>
 
-    <section class="relative">
-      <img
-        src="../assets/vectors/Blur Gradient-contact.svg"
-        class="absolute left-0 top-0 bottom-0 w-96 -z-10 blur-lg"
-      />
-      <h1 class="text-center">Get in touch with us</h1>
       <section
-        class="bg-light-violet/60 grid grid-cols-2 gap-10 mx-20 p-16 rounded-3xl my-20"
+        class="grid grid-cols-2 gap-10 py-16 mx-20 my-20 border border-gray-300 p-10 rounded-3xl"
       >
-        <div class="flex flex-col justify-start gap-5">
-          <div>
-            <h4>Drop us a message</h4>
-            <p class="text-primary/80">
-              We will get back to you as soon as possible
-            </p>
-          </div>
-          <form class="flex flex-col justify-start gap-3">
-            <div class="flex gap-3">
-              <input
-                type="text"
-                placeholder="Full Name"
-                class="w-full h-16 px-5 rounded-lg font-roboto outline-none"
-              />
-              <input
-                type="text"
-                placeholder="Company Name"
-                class="w-full h-16 px-5 rounded-lg font-roboto outline-none"
-              />
-            </div>
-            <input
-              type="email"
-              placeholder="work Email"
-              class="w-full h-16 px-5 rounded-lg font-roboto outline-none"
-            />
-            <input
-              type="text"
-              placeholder="Subject"
-              class="w-full h-16 px-5 rounded-lg font-roboto outline-none"
-            />
-            <textarea
-              placeholder="message"
-              class="font-roboto p-5 max-h-36 h-36 rounded-lg resize-none outline-none"
-            ></textarea>
-          </form>
-          <button class="primary-btn--full-width">send</button>
+        <div class="flex flex-col gap-8">
+          <h4 class="text-gradient">Trending Post</h4>
+          <h2>
+            New invoicing features to <br />
+            help you get paid faster
+          </h2>
+          <p class="font-roboto text-primary/90">
+            Over the past few months, we’ve added several new features to
+            SaaS<br />
+            Invoicing to help any business get paid faster and streamline
+            their<br />
+            collection workflows.
+          </p>
+          <p class="font-roboto text-primary/70 font-bold">
+            Luke Mattew | November, 8, 2022
+          </p>
         </div>
-        <div class="flex flex-col w-fit mx-auto mt-20 gap-5">
-          <div class="flex items-center gap-6">
-            <img src="../assets/vectors/phone-icon.svg" />
-            <div class="flex flex-col items-start">
-              <h4>+ 1800 145 276</h4>
-              <p class="text-primary/80">Free support</p>
-            </div>
-          </div>
-          <div class="flex items-center gap-6">
-            <img src="../assets/vectors/send-icon.svg" />
-            <div class="flex flex-col items-start">
-              <h4>finsweet@gmail.com</h4>
-              <p class="text-primary/80">Help Email support</p>
-            </div>
-          </div>
-          <div class="flex items-center gap-6">
-            <img src="../assets/vectors/email.svg" />
-            <div class="flex flex-col items-start">
-              <h4>sales@finsweet.com</h4>
-              <p class="text-primary/80">Sales Enquiry</p>
-            </div>
-          </div>
+        <div class="flex flex-col gap-8">
+          <img
+            src="../assets/images/blog-header-image.png"
+            class="h-full object-cover rounded-3xl"
+          />
         </div>
       </section>
+    </section>
+
+    <section class="px-20 mt-20">
+      <h2 class="text-center py-2">All Posts</h2>
+      <div
+        class="grid grid-cols-3 gap-10 px-[66px] py-[64px] items-center justify-between rounded-[24px] my-10"
+      >
+        <a href="./blogPost.html">
+          <div class="flex flex-col gap-5">
+            <img
+              src="../assets/images/article1.png"
+              alt="article 1"
+              class="w-full h-full"
+            />
+            <div class="flex flex-col gap-5">
+              <h4 class="leading-[30px]">
+                7 Automation use cases that foster<br />
+                excellent CX
+              </h4>
+              <p class="text-primary/80">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt.
+              </p>
+              <p class="text-primary/80 font-extralight">
+                Luke Matthews | November 8, 2021
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="./blogPost.html">
+          <div class="flex flex-col gap-5">
+            <img
+              src="../assets/images/article2.png"
+              alt="article 1"
+              class="w-full h-full object-cover"
+            />
+            <div class="flex flex-col gap-5">
+              <h4 class="leading-[30px]">
+                Managing Rails application secrets with encrypted credentials
+              </h4>
+              <p class="text-primary/80">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt.
+              </p>
+              <p class="text-primary/80 font-extralight">
+                Luke Matthews | November 8, 2021
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="./blogPost.html">
+          <div class="flex flex-col gap-5">
+            <img
+              src="../assets/images/article3.png"
+              alt="article 1"
+              class="w-full h-full object-cover"
+            />
+            <div class="flex flex-col gap-5">
+              <h4 class="leading-[30px]">
+                7 Automation use cases that foster excellent CX
+              </h4>
+              <p class="text-primary/80">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt.
+              </p>
+              <p class="text-primary/80 font-extralight">
+                Luke Matthews | November 8, 2021
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="./blogPost.html">
+          <div class="flex flex-col gap-5">
+            <img
+              src="../assets/images/article4.png"
+              alt="article 1"
+              class="w-full h-full object-cover"
+            />
+            <div class="flex flex-col gap-5">
+              <h4 class="leading-[30px]">
+                How to Calculate Your SaaS <br />
+                Gross Margin
+              </h4>
+              <p class="text-primary/80">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt.
+              </p>
+              <p class="text-primary/80 font-extralight">
+                Luke Matthews | November 8, 2021
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="./blogPost.html">
+          <div class="flex flex-col gap-5">
+            <img
+              src="../assets/images/article5.png"
+              alt="article 1"
+              class="w-full h-full object-cover"
+            />
+            <div class="flex flex-col gap-5">
+              <h4 class="leading-[30px]">
+                The Five Main Benefits of Automating your Accounts Receivable
+                Process
+              </h4>
+              <p class="text-primary/80">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt.
+              </p>
+              <p class="text-primary/80 font-extralight">
+                Luke Matthews | November 8, 2021
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="./blogPost.html">
+          <div class="flex flex-col gap-5">
+            <img
+              src="../assets/images/article6.png"
+              alt="article 1"
+              class="w-full h-full object-cover"
+            />
+            <div class="flex flex-col gap-5">
+              <h4 class="leading-[30px]">
+                How to Make Data-driven Pricing Decisions
+              </h4>
+              <p class="text-primary/80">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt.
+              </p>
+              <p class="text-primary/80 font-extralight">
+                Luke Matthews | November 8, 2021
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="./blogPost.html">
+          <div class="flex flex-col gap-5">
+            <img
+              src="../assets/images/article7.png"
+              alt="article 1"
+              class="w-full h-full object-cover"
+            />
+            <div class="flex flex-col gap-5">
+              <h4 class="leading-[26px]">
+                How to Make Recurring Invoicing More Efficient
+              </h4>
+              <p class="text-primary/80">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt.
+              </p>
+              <p class="text-primary/80 font-extralight">
+                Luke Matthews | November 8, 2021
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="./blogPost.html">
+          <div class="flex flex-col gap-5">
+            <img
+              src="../assets/images/article8.png"
+              alt="article 1"
+              class="w-full h-full object-cover"
+            />
+            <div class="flex flex-col gap-5">
+              <h4 class="leading-[26px]">
+                How to Reduce Checkout Abandonment for more Conversions
+              </h4>
+              <p class="text-primary/80">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt.
+              </p>
+              <p class="text-primary/80 font-extralight">
+                Luke Matthews | November 8, 2021
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="./blogPost.html">
+          <div class="flex flex-col gap-5">
+            <img
+              src="../assets/images/article9.png"
+              alt="article 1"
+              class="w-full h-full object-cover"
+            />
+            <div class="flex flex-col gap-5">
+              <h4 class="leading-[26px]">
+                10 Customer Retention Strategies for better Dwell time
+              </h4>
+              <p class="text-primary/80">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt.
+              </p>
+              <p class="text-primary/80 font-extralight">
+                Luke Matthews | November 8, 2021
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
     </section>
 
     <section class="flex flex-col mt-24">

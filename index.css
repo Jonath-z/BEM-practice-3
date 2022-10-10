@@ -2,6 +2,16 @@
 @tailwind utilities;
 @tailwind components;
 
+@font-face {
+  font-family: "roboto";
+  src: url("./assets/fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: "roboto-bold";
+  src: url("./assets/fonts/Roboto-Bold.ttf");
+}
+
 .color-primary {
   color: #1d2130;
 }
@@ -22,7 +32,7 @@
     @apply font-roboto-bold text-[48px] leading-[56.7px];
   }
   h3 {
-    @apply font-roboto-bold text-[24px] leading-[56.7px];
+    @apply font-roboto-bold text-[36px] leading-[38.4px];
   }
 
   h4 {
@@ -41,15 +51,15 @@
 
 @layer components {
   .primary-btn {
-    @apply font-roboto-bold font-extrabold text-white bg-primary hover:bg-light-violet hover:text-primary transition-all duration-500 ease-in-out cursor-pointer w-[144px] h-[56px] flex justify-center items-center rounded-xsm text-paragraph;
+    @apply font-roboto-bold font-extrabold text-white bg-primary hover:bg-light-violet hover:text-primary transition-all duration-500 ease-in-out cursor-pointer w-[144px] h-[56px] flex justify-center items-center rounded-xsm text-normal;
   }
 
   .primary-btn--full-width {
-    @apply font-roboto-bold font-extrabold text-white bg-primary hover:bg-light-violet hover:text-primary transition-all duration-500 ease-in-out cursor-pointer w-full h-[56px] flex justify-center items-center rounded-xsm text-paragraph;
+    @apply font-roboto-bold font-extrabold text-white bg-primary hover:bg-light-violet hover:text-primary transition-all duration-500 ease-in-out cursor-pointer w-full h-[56px] flex justify-center items-center rounded-xsm text-normal;
   }
 
   .primary-btn--fill-white {
-    @apply font-roboto-bold font-extrabold text-primary bg-white hover:bg-primary hover:text-white transition-all duration-500 ease-in-out cursor-pointer w-[144px] h-[56px] flex justify-center items-center rounded-xsm text-paragraph;
+    @apply font-roboto-bold font-extrabold text-primary bg-white hover:bg-primary hover:text-white transition-all duration-500 ease-in-out cursor-pointer w-[144px] h-[56px] flex justify-center items-center rounded-xsm text-normal;
   }
 
   .primary-btn--outline {
@@ -63,16 +73,62 @@
   .paragraph-large {
     @apply text-[18px];
   }
-}
 
-@font-face {
-  font-family: "roboto";
-  src: url("./assets/fonts/Roboto-Regular.ttf");
-}
+  .nav-input {
+    @apply flex gap-3 bg-white w-[576px] mx-auto h-[72px] p-[8px] rounded-sm mt-8 justify-between;
+  }
 
-@font-face {
-  font-family: "roboto-bold";
-  src: url("./assets/fonts/Roboto-Bold.ttf");
+  .home-dashbord-image {
+    @apply w-[1024px] h-[666.57px];
+  }
+
+  .product-dashboard-image {
+    @apply w-[616px] h-[401px] ml-auto;
+  }
+
+  .product-nav-gradient {
+    @apply w-full h-[555px] absolute object-cover object-center blur-3xl -z-10 top-0 left-0 border border-red-500;
+  }
+
+  .service-icon {
+    @apply w-[56px] h-[56px];
+  }
+
+  .product-image {
+    @apply w-[466px];
+  }
+
+  .prodcut-background {
+    @apply absolute top-0 right-0 bottom-0 w-[522px] h-[522px] -z-10 blur-3xl;
+  }
+
+  .pricing-button-container {
+    @apply flex gap-3 bg-light-violet w-fit mx-auto h-[72px] p-2 rounded-sm mt-2;
+  }
+
+  .pricing-icon {
+    @apply w-[54px] h-[54px];
+  }
+
+  .pricing-background {
+    @apply absolute bottom-0 right-0 w-[900px] h-[900px] object-cover -z-10 blur-3xl;
+  }
+
+  .blog-post {
+    @apply w-[758px] mx-auto flex flex-col gap-5;
+  }
+
+  .blog-background {
+    @apply absolute left-0 -z-20 w-[800px] blur-3xl rounded-full;
+  }
+
+  .blog-background--fixed-nav-midle {
+    @apply top-[30rem];
+  }
+
+  .blog-background--fixed-nav-top {
+    @apply top-[8rem];
+  }
 }
 
 .blur-gradient {
@@ -80,9 +136,8 @@
   width: 524px;
   height: 496px;
   right: 566px;
-  top: 314px;
+  top: 100px;
   left: 100px;
-  transform: rotate(200deg);
   border-radius: 100%;
 
   background: radial-gradient(

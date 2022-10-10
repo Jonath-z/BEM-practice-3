@@ -424,8 +424,8 @@ h2 {
 
 h3 {
   font-family: roboto-bold;
-  font-size: 24px;
-  line-height: 56.7px;
+  font-size: 36px;
+  line-height: 38.4px;
 }
 
 h4 {
@@ -665,10 +665,6 @@ p {
   margin-top: 10rem;
 }
 
-.mt-8 {
-  margin-top: 2rem;
-}
-
 .mt-20 {
   margin-top: 5rem;
 }
@@ -693,16 +689,8 @@ p {
   margin-top: 2.5rem;
 }
 
-.mt-2 {
-  margin-top: 0.5rem;
-}
-
 .mt-6 {
   margin-top: 1.5rem;
-}
-
-.ml-auto {
-  margin-left: auto;
 }
 
 .mt-16 {
@@ -715,14 +703,6 @@ p {
 
 .grid {
   display: grid;
-}
-
-.h-\[72px\] {
-  height: 72px;
-}
-
-.h-\[666\.57px\] {
-  height: 666.57px;
 }
 
 .h-12 {
@@ -751,30 +731,6 @@ p {
   height: 9rem;
 }
 
-.h-\[54px\] {
-  height: 54px;
-}
-
-.h-\[900px\] {
-  height: 900px;
-}
-
-.h-\[401px\] {
-  height: 401px;
-}
-
-.h-\[555px\] {
-  height: 555px;
-}
-
-.h-\[56px\] {
-  height: 56px;
-}
-
-.h-\[522px\] {
-  height: 522px;
-}
-
 .max-h-36 {
   max-height: 9rem;
 }
@@ -787,16 +743,12 @@ p {
   width: 768px;
 }
 
-.w-\[576px\] {
-  width: 576px;
+.w-12 {
+  width: 3rem;
 }
 
 .w-full {
   width: 100%;
-}
-
-.w-12 {
-  width: 3rem;
 }
 
 .w-16 {
@@ -805,10 +757,6 @@ p {
 
 .w-\[800px\] {
   width: 800px;
-}
-
-.w-\[758px\] {
-  width: 758px;
 }
 
 .w-96 {
@@ -823,30 +771,6 @@ p {
 
 .w-\[144px\] {
   width: 144px;
-}
-
-.w-\[54px\] {
-  width: 54px;
-}
-
-.w-\[900px\] {
-  width: 900px;
-}
-
-.w-\[616px\] {
-  width: 616px;
-}
-
-.w-\[56px\] {
-  width: 56px;
-}
-
-.w-\[466px\] {
-  width: 466px;
-}
-
-.w-\[522px\] {
-  width: 522px;
 }
 
 .grow {
@@ -917,16 +841,8 @@ p {
   gap: 1.5rem;
 }
 
-.gap-3 {
-  gap: 0.75rem;
-}
-
 .gap-8 {
   gap: 2rem;
-}
-
-.gap-\[87px\] {
-  gap: 87px;
 }
 
 .gap-7 {
@@ -943,6 +859,10 @@ p {
 
 .gap-9 {
   gap: 2.25rem;
+}
+
+.gap-3 {
+  gap: 0.75rem;
 }
 
 .gap-4 {
@@ -981,12 +901,8 @@ p {
   margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
 }
 
-.rounded-sm {
-  border-radius: 20px;
-}
-
-.rounded-\[24px\] {
-  border-radius: 24px;
+.rounded-3xl {
+  border-radius: 1.5rem;
 }
 
 .rounded-full {
@@ -1001,8 +917,8 @@ p {
   border-radius: 12px;
 }
 
-.rounded-3xl {
-  border-radius: 1.5rem;
+.rounded-\[24px\] {
+  border-radius: 24px;
 }
 
 .rounded-lg {
@@ -1044,19 +960,9 @@ p {
   border-color: rgb(224 228 252 / var(--tw-border-opacity));
 }
 
-.border-red-500 {
-  --tw-border-opacity: 1;
-  border-color: rgb(239 68 68 / var(--tw-border-opacity));
-}
-
 .border-b-gray-300 {
   --tw-border-opacity: 1;
   border-bottom-color: rgb(209 213 219 / var(--tw-border-opacity));
-}
-
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .bg-light-violet\/60 {
@@ -1068,7 +974,7 @@ p {
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#D798E1\]\/20 {
+.bg-gradient-rose\/20 {
   background-color: rgb(215 152 225 / 0.2);
 }
 
@@ -1077,7 +983,7 @@ p {
   background-color: rgb(29 33 48 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#2B2E3C\] {
+.bg-light-primary-blue {
   --tw-bg-opacity: 1;
   background-color: rgb(43 46 60 / var(--tw-bg-opacity));
 }
@@ -1086,9 +992,19 @@ p {
   background-color: transparent;
 }
 
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .bg-light-violet {
   --tw-bg-opacity: 1;
   background-color: rgb(224 228 252 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#2B2E3C\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(43 46 60 / var(--tw-bg-opacity));
 }
 
 .bg-white\/60 {
@@ -1102,15 +1018,6 @@ p {
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.object-center {
-  -o-object-position: center;
-     object-position: center;
-}
-
-.p-\[8px\] {
-  padding: 8px;
 }
 
 .p-5 {
@@ -1157,9 +1064,29 @@ p {
   padding-right: 1rem;
 }
 
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .px-\[66px\] {
@@ -1170,21 +1097,6 @@ p {
 .py-\[64px\] {
   padding-top: 64px;
   padding-bottom: 64px;
-}
-
-.py-16 {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-
-.py-20 {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
-.py-10 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
 }
 
 .px-5 {
@@ -1252,7 +1164,7 @@ p {
   line-height: 2.25rem;
 }
 
-.text-paragraph {
+.text-normal {
   font-size: 16px;
 }
 
@@ -1268,7 +1180,7 @@ p {
   font-size: 32px;
 }
 
-.text-\[20px\] {
+.text-heading-smd {
   font-size: 20px;
 }
 
@@ -1305,10 +1217,6 @@ p {
 
 .font-extralight {
   font-weight: 200;
-}
-
-.leading-\[57\.6px\] {
-  line-height: 57.6px;
 }
 
 .leading-\[38\.4px\] {
@@ -1521,16 +1429,130 @@ p {
   font-size: 18px;
 }
 
-.color-primary {
-  color: #1d2130;
+.nav-input {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  display: flex;
+  height: 72px;
+  width: 576px;
+  justify-content: space-between;
+  gap: 0.75rem;
+  border-radius: 20px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding: 8px;
 }
 
-.text-gradient {
-  background: -webkit-linear-gradient(53.94deg, #373fff 15.02%, #3acaf8 82.83%);
-  background-clip: text;
-  fill: transparent;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.home-dashbord-image {
+  height: 666.57px;
+  width: 1024px;
+}
+
+.product-dashboard-image {
+  margin-left: auto;
+  height: 401px;
+  width: 616px;
+}
+
+.product-nav-gradient {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -10;
+  height: 555px;
+  width: 100%;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(239 68 68 / var(--tw-border-opacity));
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  --tw-blur: blur(64px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.service-icon {
+  height: 56px;
+  width: 56px;
+}
+
+.product-image {
+  width: 466px;
+}
+
+.prodcut-background {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: -10;
+  height: 522px;
+  width: 522px;
+  --tw-blur: blur(64px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.pricing-button-container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.5rem;
+  display: flex;
+  height: 72px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  gap: 0.75rem;
+  border-radius: 20px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(224 228 252 / var(--tw-bg-opacity));
+  padding: 0.5rem;
+}
+
+.pricing-icon {
+  height: 54px;
+  width: 54px;
+}
+
+.pricing-background {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  z-index: -10;
+  height: 900px;
+  width: 900px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  --tw-blur: blur(64px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.blog-post {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  width: 758px;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.blog-background {
+  position: absolute;
+  left: 0px;
+  z-index: -20;
+  width: 800px;
+  border-radius: 9999px;
+  --tw-blur: blur(64px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.blog-background--fixed-nav-midle {
+  top: 30rem;
+}
+
+.blog-background--fixed-nav-top {
+  top: 8rem;
 }
 
 @font-face {
@@ -1545,14 +1567,25 @@ p {
   src: url("./assets/fonts/Roboto-Bold.ttf");
 }
 
+.color-primary {
+  color: #1d2130;
+}
+
+.text-gradient {
+  background: -webkit-linear-gradient(53.94deg, #373fff 15.02%, #3acaf8 82.83%);
+  background-clip: text;
+  fill: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .blur-gradient {
   position: absolute;
   width: 524px;
   height: 496px;
   right: 566px;
-  top: 314px;
+  top: 100px;
   left: 100px;
-  transform: rotate(200deg);
   border-radius: 100%;
   background: radial-gradient(
     483.9% 2719.65% at -49.5% -250%,

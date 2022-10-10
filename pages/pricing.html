@@ -14,22 +14,22 @@
         <div class="font-roboto-bold text-3xl">{finsweet</div>
 
         <ul class="flex gap-6 items-center">
-          <li class="color-primary font-roboto text-paragraph">
+          <li class="color-primary font-roboto text-normal">
             <a href="../index.html">Home</a>
           </li>
-          <li class="color-primary font-roboto text-paragraph">
+          <li class="color-primary font-roboto text-normal">
             <a href="./product.html">Product</a>
           </li>
-          <li class="color-primary font-roboto text-paragraph">
+          <li class="color-primary font-roboto text-normal">
             <a href="./pricing.html">Pricing</a>
           </li>
-          <li class="color-primary font-roboto text-paragraph">
+          <li class="color-primary font-roboto text-normal">
             <a href="./about.html">About Us</a>
           </li>
-          <li class="color-primary font-roboto text-paragraph">
+          <li class="color-primary font-roboto text-normal">
             <a href="./blog.html">Blog</a>
           </li>
-          <li class="color-primary font-roboto text-paragraph">
+          <li class="color-primary font-roboto text-normal">
             <a href="./contact.html">Contact</a>
           </li>
           <li class="primary-btn">Free trial</li>
@@ -47,9 +47,7 @@
           Lorem ipsum dolor sit amet, consectetur<br />
           adipiscing elit, sed do eiusmod tempor.
         </p>
-        <div
-          class="flex gap-3 bg-light-violet w-fit mx-auto h-[72px] p-[8px] rounded-sm mt-2"
-        >
+        <div class="pricing-button-container">
           <button class="primary-btn">Monthly</button>
           <button class="font-bold font-roboto w-[144px]">Yearly</button>
         </div>
@@ -62,14 +60,9 @@
         <div
           class="flex gap-3 py-6 border-b border-b-gray-300 px-10 items-center"
         >
-          <img
-            src="../assets/vectors/pricing-icon1.svg"
-            class="w-[54px] h-[54px]"
-          />
+          <img src="../assets/vectors/pricing-icon1.svg" class="pricing-icon" />
           <div>
-            <p class="text-[36px] flex flex-col justify-start font-bold">
-              Regular
-            </p>
+            <h3 class="flex flex-col justify-start font-bold">Regular</h3>
             <p class="text-primary/80">For Limited Period</p>
           </div>
         </div>
@@ -102,12 +95,12 @@
           sadipscing elitr.
         </p>
         <div class="flex flex-col justify-center items-center pt-10">
-          <p class="text-[36px] flex flex-col justify-center items-center">
+          <h3 class="flex flex-col justify-center items-center">
             <span class="font-bold">Free</span>
             <span class="text-xs text-center text-primary/80"
               >For Limited Period</span
             >
-          </p>
+          </h3>
           <button class="primary-btn mt-6">Get Started</button>
         </div>
       </div>
@@ -120,14 +113,9 @@
         <div
           class="flex gap-3 py-6 border-b border-gray-300 px-10 items-center"
         >
-          <img
-            src="../assets/vectors/pricng-icon2.svg"
-            class="w-[54px] h-[54px]"
-          />
+          <img src="../assets/vectors/pricng-icon2.svg" class="pricing-icon" />
           <div>
-            <p class="text-[36px] flex flex-col justify-start font-bold">
-              Plantinum
-            </p>
+            <h3 class="flex flex-col justify-start font-bold">Plantinum</h3>
             <p class="text-primary/80">For the best results</p>
           </div>
         </div>
@@ -160,12 +148,12 @@
           sadipscing elitr.
         </p>
         <div class="flex flex-col justify-center items-center pt-10">
-          <p class="text-[36px] flex flex-col justify-center items-center">
+          <h3 class="flex flex-col justify-center items-center">
             <span class="font-bold">$342</span>
             <span class="text-xs text-center text-primary/80"
               >For Limited Period</span
             >
-          </p>
+          </h3>
           <button class="primary-btn mt-6">Get Started</button>
         </div>
       </div>
@@ -173,14 +161,9 @@
         <div
           class="flex gap-3 py-6 border-b border-b-gray-300 px-10 items-center"
         >
-          <img
-            src="../assets/vectors/pricing-icon1.svg"
-            class="w-[54px] h-[54px]"
-          />
+          <img src="../assets/vectors/pricing-icon1.svg" class="pricing-icon" />
           <div>
-            <p class="text-[36px] flex flex-col justify-start font-bold">
-              Regular
-            </p>
+            <h3 class="flex flex-col justify-start font-bold">Regular</h3>
             <p class="text-primary/80">For Limited Period</p>
           </div>
         </div>
@@ -213,18 +196,18 @@
           sadipscing elitr.
         </p>
         <div class="flex flex-col justify-center items-center pt-10">
-          <p class="text-[36px] flex flex-col justify-center items-center">
+          <h3 class="flex flex-col justify-center items-center">
             <span class="font-bold">$234</span>
             <span class="text-xs text-center text-primary/80"
               >For Limited Period</span
             >
-          </p>
+          </h3>
           <button class="primary-btn mt-6">Get Started</button>
         </div>
       </div>
       <img
         src="../assets/images/Blur Gradient-pricing.png"
-        class="absolute bottom-0 right-0 w-[900px] h-[900px] object-cover -z-10 blur-3xl"
+        class="pricing-background"
       />
     </section>
 
@@ -278,7 +261,7 @@
       <div
         class="flex flex-col justify-center items-center gap-9 relative pb-32"
       >
-        <h1 class="text-center leading-[60px]">
+        <h1 class="text-center">
           Are you ready to grow your<br />
           business with us?
         </h1>
@@ -327,7 +310,7 @@
                 Subscribe to our Newsletter
               </p>
               <div
-                class="flex gap-3 justify-between rounded-xsm bg-[#2B2E3C] w-full h-fit"
+                class="flex gap-3 justify-between rounded-xsm bg-light-primary-blue w-full h-fit"
               >
                 <input
                   type="text"

@@ -10,16 +10,18 @@ module.exports = {
         "gradient-rose": "#d798e1",
         "gradient-light-green": "#9bffa5",
         "gradient-extra-light-blue": "#aed3ff",
+        "light-primary-blue": "#2B2E3C",
       },
       fontFamily: {
         roboto: "roboto",
         "roboto-bold": "roboto-bold",
       },
       fontSize: {
-        paragraph: "16px",
+        normal: "16px",
         "heading-2xl": "56px",
         "heading-xl": "48px",
         "heading-2md": "32px",
+        "heading-smd": "20px",
         "heading-md": "24px",
       },
       borderRadius: {

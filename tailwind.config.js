@@ -29,7 +29,7 @@ module.exports = {
         sm: "20px",
       },
       backgroundImage: {
-        "header-gradien": "url('./assets/images/vectors/Blur Gradient.svg')",
+        "header-gradient": "url('./assets/images/vectors/Blur Gradient.svg')",
       },
     },
   },

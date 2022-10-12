@@ -46,7 +46,7 @@
 
 @layer base {
   h1 {
-    @apply font-roboto-bold text-[56px] leading-[56.7px];
+    @apply font-roboto-bold text-[3.5rem] leading-[56.7px];
   }
   h2 {
     @apply font-roboto-bold text-[48px] leading-[56.7px];
@@ -71,15 +71,15 @@
 
 @layer components {
   .primary-btn {
-    @apply font-roboto-bold font-extrabold text-white bg-primary hover:bg-light-violet hover:text-primary transition-all duration-500 ease-in-out cursor-pointer w-[144px] h-[56px] flex justify-center items-center rounded-xsm text-normal;
+    @apply font-roboto-bold font-extrabold text-white bg-primary hover:bg-light-violet hover:text-primary transition-all duration-500 ease-in-out cursor-pointer w-[9rem] h-[3.5rem] flex justify-center items-center rounded-xsm text-normal;
   }
 
   .primary-btn--full-width {
-    @apply font-roboto-bold font-extrabold text-white bg-primary hover:bg-light-violet hover:text-primary transition-all duration-500 ease-in-out cursor-pointer w-full h-[56px] flex justify-center items-center rounded-xsm text-normal;
+    @apply font-roboto-bold font-extrabold text-white bg-primary hover:bg-light-violet hover:text-primary transition-all duration-500 ease-in-out cursor-pointer w-full h-[3.5rem] flex justify-center items-center rounded-xsm text-normal;
   }
 
   .primary-btn--fill-white {
-    @apply font-roboto-bold font-extrabold text-primary bg-white hover:bg-primary hover:text-white transition-all duration-500 ease-in-out cursor-pointer w-[144px] h-[56px] flex justify-center items-center rounded-xsm text-normal;
+    @apply font-roboto-bold font-extrabold text-primary bg-white hover:bg-primary hover:text-white transition-all duration-500 ease-in-out cursor-pointer w-[9rem] h-[3.5rem] flex justify-center items-center rounded-xsm text-normal;
   }
 
   .primary-btn--outline {
@@ -94,25 +94,21 @@
     @apply text-[18px];
   }
 
-  .nav-input {
-    @apply flex gap-3 bg-white w-[576px] mx-auto h-[72px] p-[8px] rounded-sm mt-8 justify-between;
-  }
-
-  .product-dashboard-image {
+  /* .product-dashboard-image {
     @apply w-[616px] h-[401px] ml-auto;
-  }
+  } */
 
-  .product-nav-gradient {
+  /* .product-nav-gradient {
     @apply w-full h-[555px] absolute object-cover object-center blur-3xl -z-10 top-0 left-0 border border-red-500;
-  }
+  } */
 
-  .service-icon {
-    @apply w-[56px] h-[56px];
-  }
+  /* .service-icon {
+    @apply w-[3.5rem] h-[3.5rem];
+  } */
 
-  .product-image {
+  /* .product-image {
     @apply w-[466px];
-  }
+  } */
 
   .prodcut-background {
     @apply absolute top-0 right-0 bottom-0 w-[522px] h-[522px] -z-10 blur-3xl;
@@ -437,7 +433,7 @@
   }
 
   .footer-container__button {
-    @apply primary-btn primary-btn--fill-white  h-full w-[144px];
+    @apply primary-btn primary-btn--fill-white  h-full w-[9rem];
   }
 
   .footer-container__post-footer {
@@ -458,5 +454,138 @@
 
   .footer-container__post-footer-icons {
     @apply flex gap-8;
+  }
+
+  /* ================================== PRODUCT PAGE ========================= */
+  .product-hero {
+    @apply px-20 pb-20;
+  }
+
+  .product-hero__description-container {
+    @apply w-full mx-auto grid grid-cols-2 justify-items-start mt-10 relative;
+  }
+
+  .product-hero__description {
+    @apply mt-32 space-y-2;
+  }
+
+  .product-hero__description-text {
+    @apply text-primary mx-auto py-5;
+  }
+
+  .product-hero__button-container {
+    @apply flex gap-3;
+  }
+
+  .product-hero__image-container {
+    @apply my-10 w-full;
+  }
+
+  .product-hero__image {
+    @apply w-[616px] h-[401px] ml-auto;
+  }
+
+  .product-hero__blur-background {
+    @apply w-full h-[555px] absolute object-cover object-center blur-3xl -z-10 top-0 left-0 border border-red-500;
+  }
+
+  .product-hero__logos-container {
+    @apply flex justify-between items-center py-16;
+  }
+
+  .product-service {
+    @apply relative pt-20 pr-20;
+  }
+
+  .product-service__title {
+    @apply text-center;
+  }
+
+  .product-service__blur-background {
+    @apply absolute top-0 left-0 right-0 bottom-0 w-full h-full -z-10;
+  }
+
+  .product-service__card-container {
+    @apply grid grid-cols-3 gap-10 bg-white/60 mt-16 p-24 rounded-tr-[5rem];
+  }
+
+  .product-service__card {
+    @apply flex flex-col gap-5;
+  }
+
+  .product-service__card-icon {
+    @apply w-[3.5rem] h-[3.5rem] my-5;
+  }
+
+  .product-service__card-description {
+    @apply text-sm text-primary/80;
+  }
+
+  .prodcut-marketing-insight {
+    @apply px-20 py-24 flex flex-col gap-10;
+  }
+
+  .prodcut-marketing-insight__card {
+    @apply flex justify-between items-center relative mt-20;
+  }
+
+  .prodcut-marketing-insight__card--reverse {
+    @apply flex-row-reverse;
+  }
+
+  .prodcut-marketing-insight__card-body {
+    @apply flex flex-col gap-8 relative;
+  }
+
+  .product-marketing-insight__card-title {
+    @apply text-gradient;
+  }
+
+  .product-marketing-insight__card-description {
+    @apply font-roboto text-primary/90;
+  }
+
+  .product-marketing-insight__card-image {
+    @apply w-[29.1rem];
+  }
+
+  .prodcut-marketing-insight__blur-background {
+    @apply absolute top-0  -z-20 blur-3xl;
+  }
+
+  .prodcut-marketing-insight__blur-background--left {
+    @apply left-0;
+  }
+
+  .prodcut-marketing-insight__blur-background--right {
+    @apply right-0;
+  }
+
+  .product-feature {
+    @apply home-feature;
+  }
+
+  .product-feature__title {
+    @apply home-feature__title;
+  }
+
+  .product-feature__card-container {
+    @apply flex bg-gradient-rose/20 p-16 items-center justify-between rounded-3xl my-10;
+  }
+
+  .product-feature__card {
+    @apply product-service__card;
+  }
+
+  .product-feature__card-title {
+    @apply home-quality__card-title;
+  }
+
+  .product-feature__card-description {
+    @apply home-quality__card-description;
+  }
+
+  .product-feature__card-icon {
+    @apply home-quality__card-icon;
   }
 }

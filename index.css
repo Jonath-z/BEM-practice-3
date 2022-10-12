@@ -373,7 +373,7 @@
   }
 
   .footer-container {
-    @apply flex flex-col mt-20;
+    @apply flex flex-col mt-32;
   }
 
   .footer-container__header {

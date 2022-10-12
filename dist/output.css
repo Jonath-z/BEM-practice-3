@@ -1103,10 +1103,6 @@ p {
   font-weight: 200;
 }
 
-.leading-\[38\.4px\] {
-  line-height: 38.4px;
-}
-
 .text-primary\/70 {
   color: rgb(29 33 48 / 0.7);
 }
@@ -1793,7 +1789,7 @@ p {
 }
 
 .footer-container {
-  margin-top: 5rem;
+  margin-top: 8rem;
   display: flex;
   flex-direction: column;
 }

@@ -12,10 +12,6 @@
   src: url("./assets/fonts/Roboto-Bold.ttf");
 }
 
-.color-primary {
-  color: #1d2130;
-}
-
 .text-gradient {
   background: -webkit-linear-gradient(53.94deg, #373fff 15.02%, #3acaf8 82.83%);
   background-clip: text;
@@ -62,7 +58,7 @@
 }
 
 @layer components {
-  /* ============== PRIMARY STYLES SETUP ====================== */
+  /* ============== PRIMARY COMPONENT'S STYLES SETUP ====================== */
   .primary-btn {
     @apply font-roboto-bold font-extrabold text-white bg-primary hover:bg-light-violet hover:text-primary transition-all duration-500 ease-in-out cursor-pointer w-[9rem] h-[3.5rem] flex justify-center items-center rounded-xsm text-normal;
   }
@@ -137,7 +133,7 @@
   }
 
   .nav-bar__item {
-    @apply color-primary font-roboto text-normal;
+    @apply text-primary font-roboto text-normal;
   }
 
   .nav-bar__btn {

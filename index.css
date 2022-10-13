@@ -1,0 +1,592 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+@font-face {
+  font-family: "roboto";
+  src: url("./assets/fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: "roboto-bold";
+  src: url("./assets/fonts/Roboto-Bold.ttf");
+}
+
+.text-gradient {
+  background: -webkit-linear-gradient(53.94deg, #373fff 15.02%, #3acaf8 82.83%);
+  background-clip: text;
+  fill: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.radial-gradient {
+  background: radial-gradient(
+    483.9% 2719.65% at -49.5% -250%,
+    #d798e1 17.55%,
+    #9bffa5 27.56%,
+    #aed3ff 49.89%,
+    #c9d4ef 56.53%,
+    #cacffa 65.69%
+  );
+  filter: blur(200px);
+}
+
+@layer base {
+  h1 {
+    @apply font-roboto-bold text-[3.5rem] leading-[56.7px];
+  }
+  h2 {
+    @apply font-roboto-bold text-[48px] leading-[56.7px];
+  }
+  h3 {
+    @apply font-roboto-bold text-[36px] leading-[38.4px];
+  }
+
+  h4 {
+    @apply font-roboto-bold text-[24px];
+  }
+  h5 {
+    @apply font-roboto-bold text-[18px];
+  }
+  h6 {
+    @apply font-roboto-bold text-[16px];
+  }
+  p {
+    @apply font-roboto text-[16px];
+  }
+}
+
+@layer components {
+  /* ============== PRIMARY COMPONENT'S STYLES SETUP ====================== */
+  .primary-btn {
+    @apply font-roboto-bold font-extrabold text-white bg-primary hover:bg-light-violet hover:text-primary transition-all duration-500 ease-in-out cursor-pointer w-[9rem] h-[3.5rem] flex justify-center items-center rounded-xsm text-normal;
+  }
+
+  .primary-btn--full-width {
+    @apply font-roboto-bold font-extrabold text-white bg-primary hover:bg-light-violet hover:text-primary transition-all duration-500 ease-in-out cursor-pointer w-full h-[3.5rem] flex justify-center items-center rounded-xsm text-normal;
+  }
+
+  .primary-btn--fill-white {
+    @apply font-roboto-bold font-extrabold text-primary bg-white hover:bg-primary hover:text-white transition-all duration-500 ease-in-out cursor-pointer w-[9rem] h-[3.5rem] flex justify-center items-center rounded-xsm text-normal;
+  }
+
+  .primary-btn--outline {
+    @apply primary-btn--fill-white border-2 border-light-violet;
+  }
+
+  .gradient-paragraph {
+    @apply text-gradient;
+  }
+
+  .paragraph-large {
+    @apply text-[18px];
+  }
+
+  .blur-gradient {
+    @apply radial-gradient absolute w-[32.75rem] h-[31rem] right-[35.37rem] top-[6.25rem] left-[6.25rem] rounded-full;
+  }
+
+  .product-background {
+    @apply absolute top-0 right-0 bottom-0 w-[522px] h-[522px] -z-10 blur-3xl;
+  }
+
+  .pricing-button-container {
+    @apply flex gap-3 bg-light-violet w-fit mx-auto h-[72px] p-2 rounded-sm mt-2;
+  }
+
+  .pricing-icon {
+    @apply w-[54px] h-[54px];
+  }
+
+  .pricing-background {
+    @apply absolute bottom-0 right-0 w-[900px] h-[900px] object-cover -z-10 blur-3xl;
+  }
+
+  .blog-post {
+    @apply w-[758px] mx-auto flex flex-col gap-5;
+  }
+
+  .blog-background {
+    @apply absolute left-0 -z-20 w-[800px] blur-3xl rounded-full;
+  }
+
+  .blog-background--fixed-nav-midle {
+    @apply top-[30rem];
+  }
+
+  .blog-background--fixed-nav-top {
+    @apply top-[8rem];
+  }
+
+  /* ============================= NAV BAR ====================== */
+  .nav-bar {
+    @apply flex justify-between items-center py-2 px-20;
+  }
+
+  .nav-bar__logo {
+    @apply font-roboto-bold text-3xl;
+  }
+
+  .nav-bar__list {
+    @apply flex gap-6 items-center;
+  }
+
+  .nav-bar__item {
+    @apply text-primary font-roboto text-normal;
+  }
+
+  .nav-bar__btn {
+    @apply primary-btn;
+  }
+
+  /* ===================== HOME PAGE ================== */
+  .home-header {
+    @apply px-20 bg-bottom;
+  }
+
+  .home-header__body {
+    @apply w-[1024px] mx-auto flex flex-col items-center mt-40 relative;
+  }
+
+  .home-header__blur-gradient {
+    @apply -z-20 blur-gradient;
+  }
+
+  .home-header__title {
+    @apply text-center font-bold;
+  }
+
+  .home-header__description {
+    @apply text-primary w-[768px] text-center mx-auto py-5;
+  }
+
+  .home-header__input-container {
+    @apply flex gap-3 bg-white w-[576px] mx-auto h-[72px] p-[8px] rounded-sm mt-8 justify-between;
+  }
+
+  .home-header__input {
+    @apply outline-none px-4 font-roboto;
+  }
+
+  .home-header__image-container {
+    @apply my-10;
+  }
+
+  .home-header__btn {
+    @apply primary-btn;
+  }
+
+  .home-header__image {
+    @apply w-[1024px] h-[666.57px];
+  }
+
+  .home-quality {
+    @apply px-20 mt-20;
+  }
+
+  .home-quality__title {
+    @apply text-heading-md font-roboto font-bold text-gradient text-center;
+  }
+
+  .home-quality__description {
+    @apply text-heading-xl font-extrabold font-roboto-bold text-center py-10;
+  }
+
+  .home-quality__body {
+    @apply flex bg-light-violet/60 px-16 py-16 items-center justify-between rounded-3xl my-10;
+  }
+
+  .home-quality__card {
+    @apply flex flex-col gap-8;
+  }
+
+  .home-quality__card-icon {
+    @apply w-12 h-12;
+  }
+
+  .home-quality__card-title {
+    @apply text-heading-2md font-roboto font-extrabold;
+  }
+
+  .home-quality__card-description {
+    @apply text-primary/80 font-roboto;
+  }
+
+  .home-info {
+    @apply flex mx-20 my-20 justify-between items-center;
+  }
+
+  .home-info__description-container {
+    @apply flex flex-col gap-8;
+  }
+
+  .home-info__description-subtitle {
+    @apply text-gradient;
+  }
+
+  .home-info__description-content {
+    @apply font-roboto text-primary/90;
+  }
+
+  .home-info__list {
+    @apply home-info__description-container;
+  }
+
+  .home-info__list-item {
+    @apply flex items-center gap-8;
+  }
+
+  .home-info__list-description {
+    @apply font-roboto text-primary text-heading-smd font-semibold;
+  }
+
+  .home-marketing {
+    @apply flex justify-between items-center relative w-full h-fit px-20 py-16;
+  }
+
+  .home-marketing__blur-gradient {
+    @apply absolute top-0 left-0 right-0 bottom-0 w-full h-full -z-10;
+  }
+
+  .home-marketing__body {
+    @apply flex flex-col gap-7;
+  }
+
+  .home-marketing__title {
+    @apply text-heading-xl font-extrabold;
+  }
+
+  .home-marketing__description {
+    @apply font-roboto text-primary/90;
+  }
+
+  .home-marketing__btn {
+    @apply primary-btn;
+  }
+
+  .home-logos-container {
+    @apply flex justify-between items-center px-20 py-16;
+  }
+
+  .home-discover {
+    @apply flex mx-20 my-20 justify-between items-center;
+  }
+
+  .home-discover__description {
+    @apply home-info__description-container;
+  }
+
+  .home-discrover__sub-title {
+    @apply text-gradient;
+  }
+
+  .home-discover__description-conten {
+    @apply font-roboto text-primary/90;
+  }
+
+  .home-discover__list {
+    @apply home-discover__description;
+  }
+
+  .home-discover__list-item {
+    @apply home-info__list-item;
+  }
+
+  .home-discover__icon-container {
+    @apply bg-gray-100 p-5 rounded-full;
+  }
+
+  .home-discover__text {
+    @apply paragraph-large;
+  }
+
+  .home-feature {
+    @apply px-20 mt-44;
+  }
+
+  .home-feature__title {
+    @apply text-center py-8;
+  }
+
+  .home-feature__card-container {
+    @apply flex bg-gradient-rose/20 px-16 py-16 items-center justify-between rounded-3xl my-10;
+  }
+
+  .home-feature__card {
+    @apply home-quality__card;
+  }
+
+  .home-feature__card-icon {
+    @apply w-12 h-12;
+  }
+
+  .home-feature__card-title {
+    @apply text-heading-2md font-roboto font-extrabold;
+  }
+
+  .home-feature__card-description {
+    @apply home-quality__card-description;
+  }
+
+  .home-testimonials {
+    @apply p-20 mt-44;
+  }
+
+  .home-testimonials__title {
+    @apply text-center;
+  }
+
+  .home-testimonials__card-container {
+    @apply grid grid-cols-3 gap-8 py-10 mt-10;
+  }
+
+  .home-testimonials__card {
+    @apply flex flex-col justify-center items-center gap-9 border border-blue-500 p-10 rounded-2xl;
+  }
+
+  .home-testimonials__card-description {
+    @apply text-center paragraph-large;
+  }
+
+  .home-testimonials__card-profile {
+    @apply flex flex-col justify-center items-center gap-1;
+  }
+
+  .home-testimonials__card-profile-name {
+    @apply text-2xl;
+  }
+
+  .home-testimonials__card-profile-role {
+    @apply text-light-primary-blue text-xs;
+  }
+
+  .footer-container {
+    @apply flex flex-col mt-32;
+  }
+
+  .footer-container__header {
+    @apply flex flex-col justify-center items-center gap-9 relative pb-32;
+  }
+
+  .footer-container__title {
+    @apply text-center;
+  }
+
+  .footer-container__blur-background {
+    @apply absolute bottom-0 w-full h-full -z-10 blur-3xl -mb-16;
+  }
+
+  .footer-container__footer {
+    @apply bg-primary text-gray-400 py-20 px-20 flex flex-col gap-9;
+  }
+
+  .footer-container__list-container {
+    @apply font-roboto grid grid-cols-5;
+  }
+
+  .footer-container__list {
+    @apply flex flex-col gap-3;
+  }
+
+  .footer-container__list-title {
+    @apply text-white font-bold paragraph-large;
+  }
+
+  .footer-container__list-item {
+    @apply cursor-pointer;
+  }
+
+  .footer-container__footer-form-container {
+    @apply flex flex-col gap-4 col-span-2;
+  }
+
+  .footer-container__footer-logo {
+    @apply font-roboto-bold text-white text-3xl;
+  }
+
+  .footer-container__footer-form {
+    @apply w-full flex flex-col gap-4;
+  }
+
+  .footer-container__form-title {
+    @apply footer-container__list-title;
+  }
+
+  .footer-container__form-input-container {
+    @apply flex gap-3 justify-between rounded-xsm bg-light-primary-blue w-full h-fit;
+  }
+
+  .footer-container__form-input {
+    @apply outline-none px-4 py-4 font-roboto bg-transparent text-white;
+  }
+
+  .footer-container__button {
+    @apply primary-btn  h-[3.5rem] w-[9rem];
+  }
+
+  .footer-container__form-button {
+    @apply primary-btn primary-btn--fill-white;
+  }
+
+  .footer-container__post-footer {
+    @apply flex justify-center mt-5;
+  }
+
+  .footer-container__post-footer-line {
+    @apply w-full;
+  }
+
+  .footer-container__post-footer-body {
+    @apply w-full flex justify-around items-center;
+  }
+
+  .footer-container__copyright {
+    @apply text-xs;
+  }
+
+  .footer-container__post-footer-icons {
+    @apply flex gap-8;
+  }
+
+  /* ================================== PRODUCT PAGE ========================= */
+  .product-hero {
+    @apply px-20 pb-20;
+  }
+
+  .product-hero__description-container {
+    @apply w-full mx-auto grid grid-cols-2 justify-items-start mt-10 relative;
+  }
+
+  .product-hero__description {
+    @apply mt-32 space-y-2;
+  }
+
+  .product-hero__description-text {
+    @apply text-primary mx-auto py-5;
+  }
+
+  .product-hero__button-container {
+    @apply flex gap-3;
+  }
+
+  .product-hero__image-container {
+    @apply my-10 w-full;
+  }
+
+  .product-hero__image {
+    @apply w-[616px] h-[401px] ml-auto;
+  }
+
+  .product-hero__btn {
+    @apply primary-btn;
+  }
+
+  .product-hero__btn-secondary {
+    @apply primary-btn--outline;
+  }
+
+  .product-hero__blur-background {
+    @apply w-full h-[555px] absolute object-cover object-center blur-3xl -z-10 top-0 left-0 border border-red-500;
+  }
+
+  .product-hero__logos-container {
+    @apply flex justify-between items-center py-16;
+  }
+
+  .product-service {
+    @apply relative pt-20 pr-20;
+  }
+
+  .product-service__title {
+    @apply text-center;
+  }
+
+  .product-service__blur-background {
+    @apply absolute top-0 left-0 right-0 bottom-0 w-full h-full -z-10;
+  }
+
+  .product-service__card-container {
+    @apply grid grid-cols-3 gap-10 bg-white/60 mt-16 p-24 rounded-tr-[5rem];
+  }
+
+  .product-service__card {
+    @apply flex flex-col gap-5;
+  }
+
+  .product-service__card-icon {
+    @apply w-[3.5rem] h-[3.5rem] my-5;
+  }
+
+  .product-service__card-description {
+    @apply text-sm text-primary/80;
+  }
+
+  .product-marketing-insight {
+    @apply px-20 py-24 flex flex-col gap-10;
+  }
+
+  .product-marketing-insight__card {
+    @apply flex justify-between items-center relative mt-20;
+  }
+
+  .product-marketing-insight__card--reverse {
+    @apply flex-row-reverse;
+  }
+
+  .product-marketing-insight__card-body {
+    @apply flex flex-col gap-8 relative;
+  }
+
+  .product-marketing-insight__card-title {
+    @apply text-gradient;
+  }
+
+  .product-marketing-insight__card-description {
+    @apply font-roboto text-primary/90;
+  }
+
+  .product-marketing-insight__card-image {
+    @apply w-[29.1rem];
+  }
+
+  .product-marketing-insight__blur-background {
+    @apply absolute top-0  -z-20 blur-3xl;
+  }
+
+  .product-marketing-insight__blur-background--left {
+    @apply left-0;
+  }
+
+  .product-marketing-insight__blur-background--right {
+    @apply right-0;
+  }
+
+  .product-feature {
+    @apply home-feature;
+  }
+
+  .product-feature__title {
+    @apply home-feature__title;
+  }
+
+  .product-feature__card-container {
+    @apply flex bg-gradient-rose/20 p-16 items-center justify-between rounded-3xl my-10;
+  }
+
+  .product-feature__card {
+    @apply product-service__card;
+  }
+
+  .product-feature__card-title {
+    @apply home-quality__card-title;
+  }
+
+  .product-feature__card-description {
+    @apply home-quality__card-description;
+  }
+
+  .product-feature__card-icon {
+    @apply home-quality__card-icon;
+  }
+}
